@@ -20,5 +20,5 @@ function calculate () {
   const volume = (base * height * length)/2
   
   // output
-  document.getElementById('volume').innerHTML = 'The volume of the triangular pyramid is: ' + volume.toFixed(2) + ' cm²'
+  document.getElementById('volume').innerHTML = 'The volume of the right triangular pyramid rounded to the nearest hundredth is: ' + volume.toFixed(3) + ' cm²'
 }
