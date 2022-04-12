@@ -36,7 +36,7 @@
           <tr>
             <th>
               <center><h4>Formula for the volume of a Right Triangular Pyramid</h4></center>
-              <h4>V = (B*H*L)/2</h4>
+              <h4>V = (1/6) * b * a * h</h4>
             </th>
           </tr>
         </table>
@@ -45,20 +45,35 @@
         
         <!--Simple Textfield -->
         <center><form action="#">
-          <p>Base (cm)</p>
+          <p>Side A (cm)</p>
           <div class="mdl-textfield mdl-js-textfield">
             <input
               class="mdl-textfield__input"
               type="text"
               pattern="-?[0-9]*(\.[0-9]+)?"
-              id="base-of-triangular-pyramid"
+              id="side_a-of-triangular-pyramid"
             />
-            <label class="mdl-textfield__label" for="base-of-triangular-pyramid">Base ...</label>
+            <label class="mdl-textfield__label" for="side_a-of-triangular-pyramid">Side A ...</label>
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
         </form></center>
         
         <!-- Simple Textfield -->
+        <center><form action="#">
+          <p>Side B (cm)</p>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="text"
+              pattern="-?[0-9]*(\.[0-9]+)?"
+              id="side_b-of-triangular-pyramid"
+            />
+           <label class="mdl-textfield__label" for="side_b-of-triangular-pyramid">Side B ...</label>
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+        </form></center>
+				
+        <!-- Numeric Textfield -->
         <center><form action="#">
           <p>Height (cm)</p>
           <div class="mdl-textfield mdl-js-textfield">
@@ -68,22 +83,7 @@
               pattern="-?[0-9]*(\.[0-9]+)?"
               id="height-of-triangular-pyramid"
             />
-           <label class="mdl-textfield__label" for="height-of-triangular-pyramid">Height ...</label>
-            <span class="mdl-textfield__error">Input is not a number!</span>
-          </div>
-        </form></center>
-				
-        <!-- Numeric Textfield -->
-        <center><form action="#">
-          <p>Length (cm)</p>
-          <div class="mdl-textfield mdl-js-textfield">
-            <input
-              class="mdl-textfield__input"
-              type="text"
-              pattern="-?[0-9]*(\.[0-9]+)?"
-              id="length-of-triangular-pyramid"
-            />
-            <label class="mdl-textfield__label" for="length-of-triangular-pyramid">Length ...</label>
+            <label class="mdl-textfield__label" for="height-of-triangular-pyramid">Height ...</label>
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
         </form></center>

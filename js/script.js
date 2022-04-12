@@ -10,14 +10,14 @@
  */
 function calculate () {
   // input
-  let base = parseFloat(document.getElementById('base-of-triangular-pyramid').value)
+  let side_a = parseFloat(document.getElementById('side_a-of-triangular-pyramid').value)
+  
+  let side_b = parseFloat(document.getElementById('side_b-of-triangular-pyramid').value)
   
   let height = parseFloat(document.getElementById('height-of-triangular-pyramid').value)
   
-  let length = parseFloat(document.getElementById('length-of-triangular-pyramid').value)
-  
   // process
-  const volume = (base * height * length)/2
+  const volume = (1/6) * side_b * side_a * height
   
   // output
   document.getElementById('volume').innerHTML = 'The volume of the right triangular pyramid rounded to the nearest hundredth is: ' + volume.toFixed(3) + ' cm²'
